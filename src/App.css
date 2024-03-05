@@ -1,0 +1,639 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.Bot {
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+width: 100vw;
+background: #AA076B;
+/* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #61045F, #AA076B);
+/* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #61045F, #AA076B);
+/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+*/
+
+}
+
+.react-chatbot-kit-chat-container {
+width: 400px;
+}
+
+.react-chatbot-kit-chat-bot-message {
+margin-left: 10px;
+}
+
+.react-chatbot-kit-chat-bot-message {
+background-color: #61045F;
+}
+
+.react-chatbot-kit-chat-bot-message-arrow {
+border-right: 8px solid #61045F;
+}
+
+.react-chatbot-kit-chat-btn-send {
+background-color: #61045F;
+}
+
+.ADE {
+background-color: #AA076B;
+width: 40px;
+height: 40px;
+display: grid;
+place-items: center;
+color: white;
+border-radius: 100%;
+}
+
+.start-btn {
+background-color: #61045F;
+color: white;
+padding: .5rem 1rem;
+border-radius: 999px;
+border: none;
+cursor: pointer;
+margin-left: 3rem;
+}
+
+.slow-btn {
+margin-left: 1rem;
+}
+
+.img-component {
+margin-left: 3rem;
+position: relative;
+}
+
+.img-container {
+width: 185px;
+height: 185px;
+border: 2px solid #61045F;
+overflow: hidden;
+border-radius: 5px;
+}
+
+.img-container img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+.img-component a {
+position: absolute;
+top: 0;
+left: 0;
+border-radius: 5px;
+background-color: #61045F;
+color: white;
+text-decoration: none;
+padding: .5rem 1rem;
+}
+
+.img-component a:hover {
+background-color: #61045f5e;
+}
+.MyNav {
+  padding: 0;
+}
+
+.MyNav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+.MyNav li {
+  position: relative;
+}
+
+.MyNav > ul > li {
+  position: relative;
+  white-space: nowrap;
+  padding: 8px 0 8px 20px;
+}
+
+.MyNav a, .MyNav a:focus {
+  
+  align-items: right;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #2c4964;
+  white-space: nowrap;
+  border-bottom: 2px solid #fff;
+  padding: 5px 2px;
+  margin-left: 3rem;
+  transition: 3s;
+}
+
+.MyNav a i, .MyNav a:focus i {
+  font-size: 12px;
+  line-height: 0;
+  margin-left: 5px;
+}
+
+.MyNav a:hover, .MyNav .active, .MyNav .active:focus, .MyNav li:hover > a {
+  color: #1977cc;
+  border-color: #1977cc;
+}
+.Sign{
+  display: flex;
+  flex-direction: row;
+  margin-left: 900px;
+}
+/*home*/
+
+
+.video-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh; 
+  overflow: hidden;
+  top: 0;
+  bottom: 0;
+  left: 0;
+}
+/*Loginbox ageuser*/
+.login-box {
+position: absolute;
+top: 50%;
+left: 50%;
+width: 400px;
+padding: 40px;
+transform: translate(-50%, -50%);
+background: rgba(24, 20, 20, 0.987);
+box-sizing: border-box;
+box-shadow: 0 15px 25px rgba(0,0,0,.6);
+border-radius: 10px;
+}
+
+.login-box .user-box {
+position: relative;
+}
+
+.login-box .user-box input {
+width: 100%;
+padding: 10px 0;
+font-size: 16px;
+color: #fff;
+margin-bottom: 30px;
+border: none;
+border-bottom: 1px solid #fff;
+outline: none;
+background: transparent;
+}
+
+.login-box .user-box label {
+position: absolute;
+top: 0;
+left: 0;
+padding: 10px 0;
+font-size: 16px;
+color: #fff;
+pointer-events: none;
+transition: .5s;
+}
+
+.login-box .user-box input:focus ~ label,
+.login-box .user-box input:valid ~ label {
+top: -20px;
+left: 0;
+color: #bdb8b8;
+font-size: 12px;
+}
+
+.login-box form button {
+position: relative;
+display: inline-block;
+padding: 8px 25px;
+border-radius: 50px;
+color: #fff;
+font-size: 16px;
+text-decoration: none;
+text-transform: uppercase;
+overflow: hidden;
+transition: .5s;
+margin-top: 40px;
+letter-spacing: 4px;
+background-color: #03A9F4;
+}
+
+.login-box button:hover {
+background: #03f40f;
+color: #fff;
+border-radius: 50px;
+padding: 8px 25px;
+box-shadow: 0 0 5px #03f40f,
+            0 0 25px #03f40f,
+            0 0 50px #03f40f,
+            0 0 100px #03f40f;
+}
+
+.login-box button span {
+position: absolute;
+display: block;
+}
+
+@keyframes btn-anim1 {
+0% {
+    left: -100%;
+}
+
+50%,100% {
+    left: 100%;
+}
+}
+
+.login-box button span:nth-child(1) {
+bottom: 2px;
+left: -100%;
+width: 100%;
+height: 2px;
+background: linear-gradient(90deg, transparent, #03f40f);
+animation: btn-anim1 2s linear infinite;
+}
+
+/**/
+#video-background {
+  margin-top: 4%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+}
+.caption h1{
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  color: #2c4964;
+  
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  margin-left: 25px;
+  margin-bottom: 35px;
+  position: absolute;
+  bottom:0;
+}
+.main h1{
+  font-family: 'Poppins', sans-serif;
+  font-size: larger;
+  font-weight: bold;
+  margin-left: 25px;
+}
+
+.up {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
+}
+
+.down {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
+}
+
+.card1 {
+  width: 90px;
+  height: 90px;
+  outline: none;
+  border: none;
+  background: #FFE5B4;
+  border-radius: 90px 5px 5px 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: .2s ease-in-out;
+}
+
+.instagram {
+  margin-top: 1.5em;
+  margin-left: 1.2em;
+  fill: #cc39a4;
+}
+
+.card2 {
+  width: 90px;
+  height: 90px;
+  outline: none;
+  border: none;
+  background: #FFE5B4;
+  border-radius: 5px 90px 5px 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: .2s ease-in-out;
+}
+
+.twitter {
+  margin-top: 1.5em;
+  margin-left: -.9em;
+  fill: #03A9F4;
+}
+
+.card3 {
+  width: 90px;
+  height: 90px;
+  outline: none;
+  border: none;
+  background: #FFE5B4;
+  border-radius: 5px 5px 5px 90px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: .2s ease-in-out;
+}
+
+.github {
+  margin-top: -.6em;
+  margin-left: 1.2em;
+}
+
+.card4 {
+  width: 90px;
+  height: 90px;
+  outline: none;
+  border: none;
+  background: #FFE5B4;
+  border-radius: 5px 5px 90px 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: .2s ease-in-out;
+}
+
+.discord {
+  margin-top: -.9em;
+  margin-left: -1.2em;
+  fill: #8c9eff;
+}
+
+.card1:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: #cc39a4;
+}
+
+.card1:hover .instagram {
+  fill: white;
+}
+
+.card2:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: #03A9F4;
+}
+
+.card2:hover .twitter {
+  fill: white;
+}
+
+.card3:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: black;
+}
+
+.card3:hover .github {
+  fill: white;
+}
+
+.card4:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: #8c9eff;
+}
+
+.card4:hover .discord {
+  fill: white;
+}
+
+/*  Feedback */
+.feedback-container {
+  text-align: center;
+  width: 800px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 20px;
+}
+
+textarea {
+  padding: 18px;
+  margin-bottom: 16px;
+}
+
+
+
+.thank-you-message {
+  text-align: center;
+  padding: 10px;
+  background-color: #cddfcd;
+  color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.thank-you-message h1 {
+  margin-bottom: 10px;
+}
+
+/* Slide puzzle game*/
+.slidegame {
+  background-image: url('./images/bgr.jpg');
+  background-size: cover;
+  height: 100vh;
+}
+
+.congrats-background {
+  background-image: url("./images/edu.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.congrats-background1 {
+  background-image: url("./images/lab.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.congrats-background2 {
+  background-image: url("./images/abu.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.congrats-background3 {
+  background-image: url("./images/exp.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+/* Screen1 */
+
+section {
+  height: 100vh;
+  background-color: #778DA9;
+  display: flex;
+}
+
+#home h1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-size: 150px;
+  color: rgb(5, 113, 99);
+  -webkit-text-stroke: 3px black;
+  font-style: oblique;
+}
+#home {
+  background-size: cover;
+  animation: change 10s infinite ease-in-out ;
+  
+}
+@keyframes change {
+  0% {
+      background-image:url('./images/image2.jpg') ;
+  }
+  34% {
+      background-image:url('./images/image7.jpg');
+  }
+  68% {
+      background-image:url('./images/image8.jpg');
+  }
+  100% {
+      background-image: url('./images/image9.jpg');
+  }
+}
+
+/* Profile Css */
+.profile {
+  position: relative;
+  background-color: #1977cc;
+}
+
+/* Signin and signup*/
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.form-container {
+  
+  width: 300px;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+h2 {
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 8px;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+.btn {
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+.btn:hover{
+  background-color: #333;
+  color: white;
+}
+h5 {
+  text-align: center;
+  padding: 5%;
+}
+
+
+
+/*Cards*/
+
+.cards{
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  left: 0px;
+  top: 80px;
+  right:0px;
+  justify-content: space-evenly;
+  align-content: space-evenly;
+}
+
+
+.card{
+  margin: 10px;
+  transition: 0.5s;
+}
+
+.card:hover{
+  box-shadow: 2px 5px 10px black;
+}
+.card-text{
+  font-size: 20px;
+}
+
+.gamemain{
+  display: flex;
+} 
+.game {
+  height: 100vh;
+  background-image: url('/public/images/gameback.jpg');
+  background-size: cover;
+}
+.videos {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.parent {
+  position: relative;
+  top: 100px;
+}
+.data {
+  position: relative;
+  top: 05px;
+}

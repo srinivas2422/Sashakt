@@ -1,0 +1,31 @@
+.jum-game {
+  background-image: url('/public/images/gameback.jpg');
+  background-size: cover;
+  height: 100vh;
+}
+.jum-sen {
+    text-align: center;
+    margin: 20px;
+    position: relative;
+    top: 100px;
+    margin: 0 auto;
+      background-color: #B8D8E3;
+      padding: 16px;
+      border-radius: 16px;
+      width: 70%;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
+                  rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+      height: auto;
+      color: black;
+}
+  
+    
+    .sj-input{
+      border: 2px solid #9DB0CE;
+      width: 500px;
+      height: 45px;
+      text-align: center;
+      border-radius: 15px;
+      margin-bottom: 15px;
+    }
+    

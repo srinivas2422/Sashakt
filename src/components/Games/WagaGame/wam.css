@@ -1,0 +1,131 @@
+.wagame{
+    background-color: #fffacd ;
+  
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-image: url('/public/images/bgr.jpg');
+    background-size: cover;
+  }
+   .grid {
+    
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    
+    width: 768px;
+    margin: 0 auto;
+    position: relative;
+    top:5rem;
+   }
+
+   .level-up-popup {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+  }
+  
+  .level-up-popup p {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  
+  .level-up-popup button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .level-up-popup button:hover {
+    background-color: #45a049;
+  }
+  
+  .popup{
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+  }
+  .popup-content{
+    font-size: 18px;
+    text-align:center;
+  }
+  .popup button{
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  .popup button:hover{
+    background-color: #45a049;
+  
+  }
+  .score{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 25px ;
+    margin-bottom: 2rem;
+    border-radius: 50px;
+    width: 160px;
+    height: 35px;
+    background-color: rgb(255, 234, 0);
+    margin-left: 29rem;
+    margin-top: 2rem;
+    font-size: xx-small;
+    font-family: 'Times New Roman', Times, serif;
+    position: relative;
+    top: 6rem;
+  }
+  .level{
+    display:inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 25px ;
+    margin-bottom: 2rem;
+    border-radius: 50px;
+    width: 150px;
+    height: 35px;
+    background-color: rgb(255, 250, 0);
+    margin-left: 15rem;
+    margin-top: 2rem;
+    font-size: small;
+    font-family: 'Times New Roman', Times, serif;
+    position: relative;
+    top: 6rem;
+  }
+  .badge {
+    /* display: flex; */
+    width: 200px;
+    height: 295px;
+    border-radius: 50px;
+    background: #e0e0e0;
+    box-shadow: 20px 20px 60px #bebebe,
+                  -20px -20px 60px #ffffff;
+    /* margin-top:10rem;
+    margin-bottom: 10rem; */
+    /* margin-left: 1rem; */
+    /* justify-content:left;
+    align-items:left;  */
+    float: left;
+  
+   }

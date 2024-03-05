@@ -1,0 +1,77 @@
+.App {
+    text-align: center;
+    margin: 20px;
+  }
+  .word-jumble {
+    background-color: rgb(229, 199, 135);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  .jumbled-word {
+    font-size: 24px;
+    margin:20px;
+    padding: 10px 20px;
+    background-color:rgb(207, 209, 205);
+    color: #341c1c;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 18px;
+    box-shadow:-2px 3px 2px 1px #3b3232 ;
+  }
+  input {
+    padding: 10px;
+    font-size: 16px;
+  }
+  button {
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color: #4f5e6f;
+    color: rgb(189, 169, 169);
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+    box-shadow:-2px 3px 2px 1px #bbb3b3 ;
+  }
+  button:hover {
+    background-color: #005bb6;
+  }
+  .scoreboard {
+    font-size: 13px;
+    padding: 5px 10px;
+    background-color: skyblue;
+    color: #4f1212;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 13px;
+    text-transform: uppercase;
+    box-shadow:-2px 3px 2px 1px #bbb3b3 ;
+    text-align: center;
+  }
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-size:35px;
+    margin-top: 20px;
+    text-align: center;
+    color: rgb(23, 21, 21)
+  }
+  p {
+    font-size: 2rem;
+  }
